@@ -47,6 +47,8 @@
 }
 
 .header-logo {
+    margin-right: 93px;
+
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -61,23 +63,37 @@
     }
 
 .header-nav-link {
+    display: flex;
     
+
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-nav-link)
 }
-
+    
+ 
+.header .container {
+    display: flex;
+    
+}
 .header-list {
+    display: flex;
+    align-items: center;
+    
     padding: 0;
-    margin: 0;
+    margin-left: auto;
     list-style-type: none;
 }
-
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
 .header-item {
+ 
+
     list-style: none;
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -87,6 +103,7 @@
 }
 
 .header-link {
+    
     text-decoration: none;
     
     font-weight: 500;
@@ -109,6 +126,8 @@
 }
 
 .header-tel {
+margin-left: 50px;
+
     text-decoration: none;
     list-style: none;
     font-weight: 500;
@@ -120,17 +139,22 @@
 
 /* ------------------------------Hero------------------------------ */
 .hero {
-    padding: 200px 452px 280px 200px;
-
-    margin-bottom: 94px;
+    
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 94px;
     background: var(--hero-background-color)
 }
-.hero-title {
-    width: min-content 452px;
-    margin-top: 0;
-    margin-bottom: 30px;
 
+
+.hero-title {
+    width: 696px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -141,10 +165,12 @@
 }
 
 .hero-button {
+    min-width: 200px;
+    height: 50px;
+
     display: inline-block;
     cursor: pointer;
     font-family: inherit;
-    
 
     font-weight: 700;
     font-size: 16px;
@@ -154,6 +180,7 @@
     
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px
+    
 }
 
 /* ------------------------------Portfolio------------------------------ */
@@ -188,7 +215,7 @@
 
 /* ------------------------------About------------------------------ */
 .about { 
-    margin-top: 94px;
+    
     margin-bottom: 94px;
     background: var(--background-future-work-about-portfolio)  
 }
@@ -208,11 +235,13 @@
     overflow: hidden;
 }
 .abaut-list {
+    display: flex;
     list-style: none;
 }
 
 .about-title-next {
     margin-top: 0;
+    margin-left: 30px;
     margin-bottom: 10px;
     
     font-weight: 700;
@@ -221,7 +250,9 @@
     text-transform: uppercase;
     color: var(--primary-text-color)
 }
+
 .about-text {
+    margin-left: 30px;
     margin-top: 0;
     margin-bottom: 94px;
    
@@ -232,8 +263,8 @@
 
 /* ------------------------------Comand------------------------------ */
 .comand {
+    
     margin-bottom: 94px;
-
     background: var(--background-color-comand)
 }
 
@@ -248,10 +279,24 @@
     color: var(--primary-text-color)
 }
 
+
 .comand-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    width: calc((100% - 60px) / 3);
 }
+
+
+
+.comand-picture {
+   display: flex;
+}
+
+
 .comand-title-next {
+    margin-top: 0;
+    margin-bottom: 0;
        
     font-weight: 500;
     font-size: 16px;
@@ -326,16 +371,20 @@
 }
 
 .future-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
     list-style-type: none;
+    justify-content: space-between;
 }
 
 .future-item {
-    margin-bottom: 94px;
+    margin-bottom: 188px;
 }
 
 
 
-/* ------------------------------Future------------------------------ */
+/* ------------------------------Footer------------------------------ */
 .footer {
      background: var(--footer-backgr)
 }
