@@ -18,6 +18,7 @@
 --current: #2196F3;
 --primary-text-color: #212121;
 --secondary-text-color: #757575;
+--button-begr-color: #2196F3;
 }
 
 
@@ -43,10 +44,12 @@
 
 /* ------------------------------Heder------------------------------ */
 .header {
+    
     background: var(--background-heder)
 }
 
 .header-logo {
+    
     margin-right: 93px;
 
     text-decoration: none;
@@ -63,20 +66,21 @@
     }
 
 .header-nav-link {
+    
     display: flex;
     
-
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-nav-link)
+    
 }
     
  
 .header .container {
     display: flex;
+    border: 1px solid #ECECEC;
     
 }
 .header-list {
@@ -91,8 +95,7 @@
     margin-right: 50px;
 }
 .header-item {
- 
-
+    
     list-style: none;
     font-weight: 500;
     font-size: 14px;
@@ -126,7 +129,7 @@
 }
 
 .header-tel {
-margin-left: 50px;
+    margin-left: 50px;
 
     text-decoration: none;
     list-style: none;
@@ -143,12 +146,13 @@ margin-left: 50px;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 94px;
+    
     background: var(--hero-background-color)
 }
 
 
 .hero-title {
+    
     width: 696px;
     margin-top: 0;
     margin-right: auto;
@@ -165,6 +169,7 @@ margin-left: 50px;
 }
 
 .hero-button {
+    
     min-width: 200px;
     height: 50px;
 
@@ -185,24 +190,38 @@ margin-left: 50px;
 
 /* ------------------------------Portfolio------------------------------ */
 .portfolio {
+    
     background: var(--background-future-work-about-portfolio)
 }
 
 .portfolio-list {
+    justify-content: center;
+    display: flex;
     margin-top: 0;
     margin-bottom: 34px;
+    padding-bottom: 160px;
 
     list-style: none;
 }
+
+.buttons {
+    display: flex;
+    margin-top: 128px;
+}
 .portfolio-button {
     
-
+    margin-right: 30px;
+    padding: 6px 22px;
+    
     cursor: pointer;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    border-radius: 4px;
+    border: 1px solid var(--button-begr-color);
+    border: transparent;
     
     color: var(--portfolio-button)
 }
@@ -216,8 +235,10 @@ margin-left: 50px;
 /* ------------------------------About------------------------------ */
 .about { 
     
-    margin-bottom: 94px;
     background: var(--background-future-work-about-portfolio)  
+}
+.about .container {
+    margin-top: 0;
 }
 .about-title {
     margin-top: 0;
@@ -235,14 +256,16 @@ margin-left: 50px;
     overflow: hidden;
 }
 .abaut-list {
+    margin: 0;
     display: flex;
     list-style: none;
 }
 
 .about-title-next {
+    display: inline-block;
     margin-top: 0;
     margin-left: 30px;
-    margin-bottom: 10px;
+    padding-top: 94px;
     
     font-weight: 700;
     font-size: 14px;
@@ -252,9 +275,11 @@ margin-left: 50px;
 }
 
 .about-text {
+    display: inline-block;
+    padding-bottom: 94px;
     margin-left: 30px;
     margin-top: 0;
-    margin-bottom: 94px;
+    margin: bottom 10px;
    
     font-size: 14px;
     line-height: 1.71;
@@ -263,7 +288,6 @@ margin-left: 50px;
 
 /* ------------------------------Comand------------------------------ */
 .comand {
-    
     margin-bottom: 94px;
     background: var(--background-color-comand)
 }
@@ -281,6 +305,7 @@ margin-left: 50px;
 
 
 .comand-list {
+    
     margin: 0;
     padding: 0;
     list-style: none;
@@ -290,8 +315,11 @@ margin-left: 50px;
 
 
 .comand-picture {
-   display: flex;
+  display: flex;
+  
+  
 }
+
 
 
 .comand-title-next {
@@ -323,8 +351,14 @@ margin-left: 50px;
 }
 
 .work-list {
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 34px;
+    justify-content: space-between;
+    
 
     list-style: none;
 }
@@ -349,6 +383,7 @@ margin-left: 50px;
 }
 
 .work-link {
+    width: 30px;
     text-decoration: none;
 }
 
@@ -371,6 +406,7 @@ margin-left: 50px;
 }
 
 .future-list {
+   
     margin: 0;
     padding: 0;
     display: flex;
@@ -379,6 +415,7 @@ margin-left: 50px;
 }
 
 .future-item {
+    
     margin-bottom: 188px;
 }
 
@@ -386,10 +423,15 @@ margin-left: 50px;
 
 /* ------------------------------Footer------------------------------ */
 .footer {
+    
      background: var(--footer-backgr)
 }
 
 .footer-logo {
+    display: flex;
+    flex: content;
+    
+    
     font-family: 'Raleway',sans-serif;
     text-decoration: none;
     
@@ -404,6 +446,9 @@ margin-left: 50px;
 }
 
 .address {
+    display: inline-block;
+    justify-content: flex-start;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -415,6 +460,8 @@ margin-left: 50px;
 
 
 .footer-list {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     
 }
