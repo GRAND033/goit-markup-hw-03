@@ -169,11 +169,12 @@
 }
 
 .hero-button {
-    
+    padding: 10px 32px;
     min-width: 200px;
     height: 50px;
-
+    border: transparent;
     display: inline-block;
+    
     cursor: pointer;
     font-family: inherit;
 
@@ -195,19 +196,21 @@
 }
 
 .portfolio-list {
+    
+    margin: 0;
+    padding-bottom: 160px;
     justify-content: center;
     display: flex;
-    margin-top: 0;
-    margin-bottom: 34px;
-    padding-bottom: 160px;
+   
 
     list-style: none;
 }
 
 .buttons {
     display: flex;
-    margin-top: 128px;
+    padding: 122px 0px 50px;
 }
+
 .portfolio-button {
     
     margin-right: 30px;
@@ -347,10 +350,11 @@
 
 /* ------------------------------Work------------------------------ */
 .work {
+    padding: 56px 0;
     background: var(--background-future-work-about-portfolio)
 }
 
-.work-list {
+.work-picture {
     display: inline-block;
     display: flex;
     flex-wrap: wrap;
@@ -358,13 +362,22 @@
     margin-bottom: 0;
     padding-top: 34px;
     justify-content: space-between;
-    
+    border-bottom:  1px solid #EEEEEE;
+}
 
+.work-list {
+    margin: 0;
+    padding: 0;
+    
     list-style: none;
 }
-.work-title {
+.work-title:not(:last-child) {
     margin-bottom: 4px;
+}
 
+.work-title {
+    margin-top: 0;
+    
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
@@ -373,9 +386,10 @@
     color: var(--primary-text-color)
 }
 
-.work-text {margin-top: 0;
-
-    margin-bottom: 0;
+.work-text {
+    margin: 0px;
+    padding-bottom: 86px;
+   
 
     font-size: 16px;
     line-height: 1.87;
@@ -383,7 +397,7 @@
 }
 
 .work-link {
-    width: 30px;
+    
     text-decoration: none;
 }
 
@@ -423,14 +437,13 @@
 
 /* ------------------------------Footer------------------------------ */
 .footer {
-    
+    padding: 60px 0px;
      background: var(--footer-backgr)
 }
 
 .footer-logo {
-    display: flex;
-    flex: content;
-    
+    display: inline-block;
+    margin-bottom: 20px;
     
     font-family: 'Raleway',sans-serif;
     text-decoration: none;
@@ -446,9 +459,6 @@
 }
 
 .address {
-    display: inline-block;
-    justify-content: flex-start;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -460,15 +470,18 @@
 
 
 .footer-list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    
+    margin: 0;
+    padding: 0;
+   list-style: none;
 }
 
 .link-address{
     text-decoration: none;
     color: var(--address)
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 .footer-item {
     font-size: 14px;
