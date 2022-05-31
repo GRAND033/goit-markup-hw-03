@@ -34,6 +34,35 @@
     text-align: center;
 }
 
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -44,13 +73,13 @@
 
 /* ------------------------------Heder------------------------------ */
 .header {
-    padding: 80px 0; 
-    background: var(--background-heder)
+    padding: 32px 0;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-logo {
     margin-right: 93px;
-
+    
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -60,11 +89,12 @@
     color: var(--logo)
 }
 
-    .logo-second {
-        color: var(--logo-second)
-    }
+.logo-second {
+    color: var(--logo-second)
+}
 
 .header-nav-link {
+    
     display: flex;
     
     font-weight: 500;
@@ -77,19 +107,18 @@
  
 .header .container {
     display: flex;
-    border: 1px solid #ECECEC;
+    
 }
 .header-list {
     display: flex;
     align-items: center;
-    padding: 0;
+    
     margin-left: auto;
     list-style-type: none;
 }
-.header-item:not(:last-child) {
-    margin-right: 50px;
-}
+
 .header-item {
+    margin-left: 50px;
     list-style: none;
     font-weight: 500;
     font-size: 14px;
@@ -99,7 +128,10 @@
     color: var(--header-item)
 }
 
+
+
 .header-link {
+    padding: 32px 0;
     align-items: center;
     
     text-decoration: none;
@@ -182,25 +214,18 @@
 }
 
 /* ------------------------------Portfolio------------------------------ */
-.portfolio {
-    background: var(--background-future-work-about-portfolio)
-}
+
 
 .portfolio-list {
-    margin: 0;
     justify-content: center;
     display: flex;
    
     list-style: none;
 }
 
-.buttons {
-    padding-top: 122px;
-    display: flex;
-    margin-bottom: 34px;
-}
-
 .portfolio-button {
+    display: flex;
+    margin-bottom: 50px;
     justify-content: center;
     margin-right: 30px;
     padding: 6px 22px;
@@ -225,15 +250,9 @@
 }
 
 /* ------------------------------About------------------------------ */
-.about { 
-    
-    background: var(--background-future-work-about-portfolio)  
-}
-.about .container {
-    margin-top: 0;
-}
+
 .about-title {
-    margin-top: 0;
+    
 }
 .visually-hidden {
     position: absolute;
@@ -255,9 +274,8 @@
 
 .about-title-next {
     display: inline-block;
-    margin-top: 0;
+    margin-bottom: 10px;
     margin-left: 30px;
-    padding-top: 94px;
     
     font-weight: 700;
     font-size: 14px;
@@ -268,9 +286,7 @@
 
 .about-text {
     display: inline-block;
-    padding-bottom: 94px;
     margin-left: 30px;
-    margin-top: 0;
     margin: bottom 10px;
    
     font-size: 14px;
@@ -280,12 +296,10 @@
 
 /* ------------------------------Comand------------------------------ */
 .comand {
-    margin-bottom: 94px;
     background: var(--background-color-comand)
 }
 
 .comand-title {
-    margin-top: 0;
     margin-bottom: 50px;
     
     font-weight: 700;
@@ -295,23 +309,25 @@
     color: var(--primary-text-color)
 }
 
-
 .comand-list {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    margin-left: -30px;
+    margin-top: -50px;
+
     
-    list-style: none;
-    width: calc((100% - 60px) / 3);
 }
 
-.comand-picture {
-  display: flex;
+.comand-item {
+    flex-basis: calc((100% - 30px) / 4);
+    margin-left: 30px;
+    margin-top: 50px;
 }
+
 
 .comand-title-next {
-    margin-top: 0;
-    margin-bottom: 0;
-       
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -321,7 +337,6 @@
 }
  
 .comand-text {
-    margin-bottom: 0;    
     
     font-size: 16px;
     line-height: 1.19;
@@ -333,37 +348,26 @@
     
 
 /* ------------------------------Work------------------------------ */
-.work {
-    padding: 56px 0;
-    background: var(--background-future-work-about-portfolio)
-}
-
-.work-picture {
-    display: inline-block;
-    display: flex;
-    flex-wrap: wrap;
-    margin:0px;
-    padding: 0px;
-}
 
 .work-item {
-    width: calc((100% - 90px) / 3);
     margin-left: 30px;
+    margin-top: 30px;
 }
 
 .work-list {
-    margin-left: 0px;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
     
     list-style: none;
 }
 
-.work-title:not(:last-child) {
-    margin-bottom: 4px;
-}
 
 .work-title {
-    margin-top: 0;
+    
+    margin-top: 20px;
+    margin-bottom: 4px;
     
     text-decoration: none;
     font-weight: 700;
@@ -375,13 +379,15 @@
 }
 
 .text-card {
-    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .work-text {
-    margin: 0px;
-    padding-bottom: 86px;
-   
+    
+
     font-size: 16px;
     line-height: 1.87;
     color: var(--secondary-text-color)
@@ -394,11 +400,10 @@
 
 /* ------------------------------Future------------------------------ */
 .future {
-    background: var(--background-future-work-about-portfolio)
+    
 }
 
 .future-title {
-    margin-top: 0;
     margin-bottom: 50px;
     
     font-weight: 700;
@@ -410,8 +415,6 @@
 }
 
 .future-list {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-between;
     
@@ -419,7 +422,7 @@
 }
 
 .future-item {
-    margin-bottom: 188px;
+   margin-left: 30px;
 }
 
 
