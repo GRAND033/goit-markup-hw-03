@@ -30,10 +30,6 @@
     
 } 
 
-.section-title-centered {
-    text-align: center;
-}
-
 p,
 ul,
 h1,
@@ -68,7 +64,7 @@ img {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-     /* outline: 3px solid red; */
+    /* outline: 3px solid red; */
 }
 
 /* ------------------------------Heder------------------------------ */
@@ -110,6 +106,7 @@ img {
     
 }
 .header-list {
+    
     display: flex;
     align-items: center;
     
@@ -155,6 +152,7 @@ img {
 }
 
 .header-tel {
+    padding: 32px 0;
     margin-left: 50px;
 
     text-decoration: none;
@@ -217,6 +215,7 @@ img {
 
 
 .portfolio-list {
+    margin-bottom: 50px;
     justify-content: center;
     display: flex;
    
@@ -225,9 +224,9 @@ img {
 
 .portfolio-button {
     display: flex;
-    margin-bottom: 50px;
+    
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 8px;
     padding: 6px 22px;
     
     cursor: pointer;
@@ -350,6 +349,7 @@ img {
 /* ------------------------------Work------------------------------ */
 
 .work-item {
+    flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
 }
